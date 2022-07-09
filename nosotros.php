@@ -10,6 +10,9 @@
 <meta name="author" content="Templates.com - website templates provider">
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+<link rel="stylesheet" href="chat/css/btn_mss.css" >	
+
 <!--[if lt IE 7]>
      <link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="screen">
      <script type="text/javascript" src="js/ie_png.js"></script>
@@ -22,6 +25,7 @@
   <![endif]-->
 </head>
 <body id="page2">
+
 <div class="wrap"> 
   <!-- header -->
   <header>
@@ -124,6 +128,9 @@
     </section>
   </div>
 </div>
+
+<?php include "chat/btn_msg.php" ?>
+
 <!-- footer -->
 <footer>
     <div class="container">

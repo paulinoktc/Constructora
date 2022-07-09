@@ -129,6 +129,9 @@
 		</section>
 	</div>
 </div>
+
+<?php include "chat/btn_msg.php" ?>
+
 <!-- footer -->
 <footer>
 	<div class="container">

@@ -1,0 +1,10 @@
+.btn_message{
+    height: 70%;
+    width: 30%;
+    border-radius: 10px;
+    background: olive;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 5;
+}

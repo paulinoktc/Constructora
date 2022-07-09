@@ -3,18 +3,10 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-	<title>JP's Inmuebles</title>
-	<meta charset="utf-8">
-	<link href='images/shortcut.png' rel='shortcut icon' type='image/png'>
-	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/responsiveslides.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/themes.css" type="text/css" media="all">
-</head>
-
+<?php include "php/header.php" ?>
 
 <body id="page1">
+	
 	<div class="wrap">
 		<header>
 			<div class="container">
@@ -112,7 +104,8 @@
 		</div>
 	</div>
 
-	
+
+	<?php include "chat/php/index.php" ?>
 
 
 	<!-- footer -->
@@ -137,6 +130,7 @@
 			</div>
 		</div>
 	</footer>
+
 	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
 	<script type="text/javascript" src="js/cufon-yui.js"></script>
 	<script type="text/javascript" src="js/cufon-replace.js"></script>
