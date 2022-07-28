@@ -1,10 +1,51 @@
-.btn_message{
-    height: 70%;
-    width: 30%;
-    border-radius: 10px;
-    background: olive;
+.button-message {
     position: fixed;
-    right: 10px;
+    width: 35px;
+    height: 35px;
     bottom: 10px;
-    z-index: 5;
+    right: 30px;
+    color: #2196f3;
+    transition: all 500ms linear;
+    z-index: 4;
+}
+
+.none {
+    display: none;
+}
+
+
+
+
+.content {
+    background: rgb(1, 78, 95);
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-left {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    /*background: olive;*/
+}
+
+.nav-right {
+    display: flex;
+    width: 50%;
+    /*background:blue;*/
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+
+}
+
+.bs {
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.bs:hover {
+    background: rgba(255, 255, 255, 0.385);
 }

@@ -1,8 +1,8 @@
-<div class="wrapper" id="wrapper">
+<div class="wrapper none none" id="wrapper">
     <section class="form signup">
         <header>Chatea con nosotros</header>
-        <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
-            <div class="error-text"></div>
+        <form id="form_register" action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
+            <div id="error_register" class="error-text"></div>
             <div class="name-details">
                 <div class="field input">
                     <label>Nombre</label>
@@ -27,7 +27,7 @@
                 <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
             </div>
             <div class="field button">
-                <input type="submit" name="submit" value="Continuar chateando">
+                <input id="btn_register" type="submit" name="submit" value="Continuar chateando">
             </div>
         </form>
 
@@ -37,6 +37,7 @@
     </section>
 
 </div>
+
 <div class="button-message">
     <a id="btn_mss">
         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-chat-text-fill" viewBox="0 0 16 16">

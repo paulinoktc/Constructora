@@ -73,7 +73,7 @@ aside {
 .wrapper {
 	width: 100%;
 	overflow: hidden;
-	z-index: 5;
+	z-index: 3;
 }
 .wrap {
 	height: auto !important;
@@ -240,10 +240,12 @@ p {
 	margin: 0;
 }
 /*----- txt, links, lines, titles -----*/
+/*
 a {
 	color: #ff7b01;
 	outline: none;
 }
+*/
 a:hover {
 	text-decoration: none;
 }

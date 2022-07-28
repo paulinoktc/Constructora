@@ -6,10 +6,11 @@
 <?php include "php/header.php" ?>
 
 <body id="page1">
-	
+
 	<div class="wrap">
 		<header>
 			<div class="container">
+				<!--
 				<h1><a href="index.php">JP's Inmuebles</a></h1>
 				<nav>
 					<ul id="menu">
@@ -27,6 +28,27 @@
 						<li class="end"><a href="contacto.php" class="nav5">Contactanos</a></li>
 					</ul>
 				</nav>
+-->
+
+				<!------------------------------------------------------------------->
+
+				<div class="content">
+					<div class="nav-left">
+						<a class="bs" href="">Creditos</a>
+						<a class="bs" href="">Proyectos</a>
+						<a class="bs" href="">carrito</a>
+						<a class="bs" href="">Contactanos</a>
+
+					</div>
+					<div class="nav-right">
+						<a class="bs" href="">inicio</a>
+
+					</div>
+				</div>
+
+				<!------------------------------------------------------------------->
+
+
 				<div id="telefono"> <span>(789) 893 2824 </span> </div>
 			</div>
 
@@ -105,42 +127,9 @@
 	</div>
 
 
-	<?php include "chat/php/index.php" ?>
-
-
-	<!-- footer -->
-	<footer>
-		<div class="container">
-			<div id="social">
-				<a target="_blank" href="https://www.facebook.com/inmobiliaria.construyendohogares" id="social_fb">
-					<span>facebook</span>
-				</a>
-				<a href="#" id="social_tw">
-					<span>twitter</span>
-				</a>
-			</div>
-
-			<div id="referencias">
-				<a href="mapaSitio.php">Mapa del sitio</a>
-				<a href="login.php">Intranet</a>
-				<a href="contacto.php">Contactanos</a>
-			</div>
-			<div id="copyright">
-				<span>© 2014 JP'S Inmuebles S.A de C.V. Todos los Derechos Reservados</span>
-			</div>
-		</div>
-	</footer>
-
-	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
-	<script type="text/javascript" src="js/cufon-yui.js"></script>
-	<script type="text/javascript" src="js/cufon-replace.js"></script>
-	<script type="text/javascript" src="js/Myriad_Pro_300.font.js"></script>
-	<script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/responsiveslides.min.js"></script>
-	<script type="text/javascript">
-		Cufon.now();
-	</script>
+	<?php include "chat/php/register.php" ?>
+	<?php include "chat/php/login.php " ?>
+	<?php include "php/footer.php" ?>
 	<script>
 		$(function() {
 			$(".rslides").responsiveSlides({

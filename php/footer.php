@@ -28,6 +28,10 @@
 <script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/responsiveslides.min.js"></script>
+<script type="text/javascript" src="chat/js/btn.js"> </script>
+<script type="text/javascript" src="chat/js/login.js"></script>
+<script type="text/javascript" src="chat/js/signup.js"></script>
+
 <script type="text/javascript">
     Cufon.now();
 </script>
