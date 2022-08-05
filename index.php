@@ -130,6 +130,8 @@
 	<?php include "chat/php/register.php" ?>
 	<?php include "chat/php/login.php " ?>
 	<?php include "php/footer.php" ?>
+	<?php include "chat/php/chat.php"?>
+
 	<script>
 		$(function() {
 			$(".rslides").responsiveSlides({

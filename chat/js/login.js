@@ -7,7 +7,6 @@ form_login.onsubmit = (e) => {
 
 
 continueBtn1.onclick = () => {
-  alert("atach")
 
   let xhr = new XMLHttpRequest();
   xhr.open("POST", "../muebleria/chat/model/login.php", true);
@@ -15,9 +14,16 @@ continueBtn1.onclick = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
         let data = xhr.response;
+        data = data.split(" ").join("");
+        var letter = "success";
+        console.log(data.length);
+
+        console.log(letter.length);
         if (data === "success") {
-         // location.href = "usuarios.php";
-         //------------------------------------------------------
+          wrapper.classList.add('none');
+          wrapper2.classList.add('none');
+          wrapper3.classList.remove('none');
+          console.log(data);
         } else {
           errorText.style.display = "block";
           errorText.textContent = data;

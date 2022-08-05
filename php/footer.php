@@ -32,6 +32,9 @@
 <script type="text/javascript" src="chat/js/login.js"></script>
 <script type="text/javascript" src="chat/js/signup.js"></script>
 
+
+
+
 <script type="text/javascript">
     Cufon.now();
 </script>

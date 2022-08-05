@@ -5,11 +5,11 @@
       <div id="error_login" class="error-text"></div>
       <div class="field input">
         <label>Dirección de correo electrónico</label>
-        <input type="text" name="email" placeholder="Introduce tu correo electrónico" required>
+        <input type="text" name="email" placeholder="Introduce tu correo electrónico" required value="soporte@gmail.com">
       </div>
       <div class="field input">
         <label>Contraseña</label>
-        <input type="password" name="password" placeholder="Ingresa tu contraseña" required>
+        <input type="password" name="password" placeholder="Ingresa tu contraseña" required value="admin123">
         <i class="fas fa-eye"></i>
       </div>
       <div class="field button">
