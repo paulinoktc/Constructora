@@ -8,8 +8,8 @@
 			# code...
 		$conexion = mysqli_connect($server, $user, $pass, $db);
 
-		$usuario = mysql_real_escape_string($_POST['user']);
-		$contrasena = mysql_real_escape_string($_POST['pass']);
+		$usuario = mysqli_real_escape_string($conexion,$_POST['user']);
+		$contrasena = mysqli_real_escape_string($conexion,$_POST['pass']);
 		$peticion = "SELECT * FROM admin WHERE nick='".$usuario."' AND password ='".md5($contrasena)."'";
 		/*		
 		echo $_POST['user'];

@@ -5,7 +5,6 @@ form_login.onsubmit = (e) => {
   e.preventDefault();
 }
 
-
 continueBtn1.onclick = () => {
 
   let xhr = new XMLHttpRequest();
@@ -16,17 +15,19 @@ continueBtn1.onclick = () => {
         let data = xhr.response;
         data = data.split(" ").join("");
         var letter = "success";
-        console.log(data.length);
+        console.log(data);
 
         console.log(letter.length);
         if (data === "success") {
           wrapper.classList.add('none');
           wrapper2.classList.add('none');
           wrapper3.classList.remove('none');
-          console.log(data);
+          init();
+          console.log(data+$_SESSION['unique_id']);
         } else {
           errorText.style.display = "block";
           errorText.textContent = data;
+          console.log(data);
         }
       }
     }

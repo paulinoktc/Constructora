@@ -1,19 +1,11 @@
-<?php
-session_start();
-include_once "../modelo/config.php";
-if (!isset($_SESSION['unique_id'])) {
-  header("location: login.php");
-}
-?>
-<?php include_once "header.php"; ?>
-
 <body>
   <div class="wrapper none" id="wrapper3">
     <section class="chat-area">
       <header>
         <?php
-        $user_id = mysqli_real_escape_string($conn, 4);
-        $sql = mysqli_query($conn, "SELECT * FROM users WHERE unique_id = 1");
+        include_once "../muebleria/chat/model/config.php";
+        $user_id = mysqli_real_escape_string($conn,'858696368');
+        $sql = mysqli_query($conn, "SELECT * FROM users WHERE unique_id = {$user_id}");
         if (mysqli_num_rows($sql) > 0) {
           $row = mysqli_fetch_assoc($sql);
         } else {
@@ -21,11 +13,12 @@ if (!isset($_SESSION['unique_id'])) {
         }
         ?>
         <a href="usuarios.php" class="back-icon"><i class="fas fa-arrow-left"></i></a>
-        <img src="../modelo/images/<?php echo $row['img']; ?>" alt="">
+        <img src="../muebleria/chat/model/images/1653505720h.jpg" alt="">
         <div class="details">
           <span><?php echo $row['fname'] . " " . $row['lname'] ?></span>
           <p><?php echo $row['status']; ?></p>
         </div>
+
       </header>
       <div class="chat-box">
 
@@ -37,7 +30,9 @@ if (!isset($_SESSION['unique_id'])) {
       </form>
     </section>
   </div>
-  <script type="text/javascript" src="chat/js/chat.js"></script>
+
+  <script src="../muebleria/chat/js/chat.js"></script>
+
 </body>
 
 </html>
