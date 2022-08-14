@@ -13,10 +13,10 @@
         }
         ?>
         <a href="usuarios.php" class="back-icon"><i class="fas fa-arrow-left"></i></a>
-        <img src="../muebleria/chat/model/images/1653505720h.jpg" alt="">
+        <img src="../muebleria/chat/model/images/<?php echo $row['img']?>"alt="">
         <div class="details">
           <span><?php echo $row['fname'] . " " . $row['lname'] ?></span>
-          <p><?php echo $row['status']; ?></p>
+          <p><?php echo $row['status']." ".$row['img']; ?></p>
         </div>
 
       </header>

@@ -23,7 +23,6 @@ continueBtn1.onclick = () => {
           wrapper2.classList.add('none');
           wrapper3.classList.remove('none');
           init();
-          console.log(data+$_SESSION['unique_id']);
         } else {
           errorText.style.display = "block";
           errorText.textContent = data;

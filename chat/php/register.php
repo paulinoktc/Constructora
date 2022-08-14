@@ -1,4 +1,4 @@
-<div class="wrapper none none" id="wrapper">
+<div class="wrapper none" id="wrapper">
     <section class="form signup">
         <header>Chatea con nosotros</header>
         <form id="form_register" action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
